@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="fontawesome-free-6.0.0/css/all.min.css">
+        
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/vinhlong.css">
+        <link rel="stylesheet" href="css/diemden.css">
+        <link rel="stylesheet" href="css/search.css">
+    
+        <title>Khu du lịch Hoàng Hảo - Vĩnh Long</title>
+      </head>
+  <body>
+   
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <section>
+      <header class="header">
+        <div class="container d-flex justify-content-between">
+          <!-- logo -->
+          <a href="trangchu.html" style="font-size: 32px; font-weight: 550; color: #ec6408; padding: 0px;">
+            TRAVEL
+          </a>
+          <ul class="nav d-sm-none d-md-none d-lg-flex d-xl-flex">
+            <li class="nav-item align-self-center">
+              <a class=" menu nav-link text-light  align-self-center d-none d-sm-none d-md-none d-none d-lg-flex d-xl-flex" href="trangchu.html" aria-current="page">
+                TRANG CHỦ
+              </a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class=" menu nav-link text-light  align-self-center d-none d-sm-none d-md-none d-none d-lg-flex d-xl-flex" style="font-weight: 400;" href="gioithieu.html">
+                GIỚI THIỆU
+              </a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class=" menu nav-link text-light  align-self-center d-none d-sm-none d-md-none d-none d-lg-flex d-xl-flex" style="font-weight: 400;" href="diadiem.html">
+                ĐỊA ĐIỂM
+              </a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class="menu nav-link text-light  align-self-center d-none d-sm-none d-md-none d-none d-lg-flex d-xl-flex" style="font-weight: 400;" href="cactinh.html">
+                  CÁC TỈNH/THÀNH
+              </a>
+            </li>
+          </ul>
+          <!-- offcanvas menu-->
+          <div class="d-flex">
+            <div class="align-self-center me-3">
+              <nav class="navbar navbar-expand-xl navbar-expand-lg navbar-light">
+                <!-- nút menu -->
+                <button class="navbar-toggler" style="background-color: #ec6408;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- offcanvas -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header">
+                    <img src="images/logo.png" alt="" width="80px" height="80px">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <form class="d-flex mx-2">
+                    <input class="form-control search me-2 align-self-center" type="search" placeholder="Search" aria-label="Search">
+                  </form>
+                  <div class="d-flex mx-2 justify-content-end">
+                    <button type="button" class="btn p-1 m-1 align-self-center" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                      Đăng Nhập
+                    </button>
+ 
+                    <button type="button" class="btn p-1 m-1 align-self-center" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                      Đăng Ký
+                    </button>
+                  </div>
+                  <hr>
+                  <div class="offcanvas-body p-0 mx-3">
+                    <div class="dropdown mt-3">
+                      <ul class="navbar-nav">
+                        <li class="nav-item px-xl-5 px-lg-4 px-md-3 pt-3">
+                          <a href="trangchu.html">
+                            TRANG CHỦ
+                          </a>
+                        </li>
+                        <li class="nav-item px-xl-5 px-lg-4 px-md-3 pt-3">
+                          <a href="gioithieu.html">
+                            GIỚI THIỆU
+                          </a>
+                        </li>
+                        <li class="nav-item  px-xl-5 px-lg-4 px-md-3 pt-3">
+                          <a href="diadiem.html">
+                            ĐỊA ĐIỂM
+                          </a>
+                        </li>
+                        <li class="nav-item px-xl-5 px-lg-4 px-md-3 pt-3">
+                          <a href="cactinh.html">
+                            CÁC TỈNH/THÀNH
+                          </a>
+                        </li>
+                       
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+                 <!--search-->
+                 <div class="dropdown align-self-center d-sm-none d-md-none d-none d-lg-flex d-xl-flex"> 
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="dropdown-content">
+                  <a class="choose" href="vinhlong.html" style="text-decoration: none;">Vĩnh Long</a>
+                  <a class="choose" href="cantho.html" style="text-decoration: none;">Cần Thơ</a>
+                </div>
+              </div>
+            <!-- Dang nhap -->
+            <button type="button" class="btn log b align-self-center d-sm-none d-md-none d-none d-lg-flex d-xl-flex" style="color: #fff!important; width: fit-content;" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              Đăng Nhập
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title b" id="exampleModalLabel">Đăng Nhập</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="dangnhap.php" method="post" role="form">
+
+                      <div class="container">
+                        <label class="b" for="username"><b>Tên đăng nhập</b></label>
+                        <input type="text" placeholder="Nhập tên đăng nhập" name="username" required="">
+                    
+                        <label class="b" for="password"><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập mật khẩu" name="password" required="">
+                    
+                        <button type="submit" class="modal-login">Đăng nhập</button>
+                        <label>
+                          <input class="b" type="checkbox" checked="checked" name="remember"> Ghi nhớ tôi
+                        </label>
+                      </div>
+                    
+                      <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" class="cancelbtn">Thoát</button>
+                        <span class="psw b">Quên <a href="#">mật khẩu?</a></span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- Dang ký -->
+             <button type="button" class="btn b log align-self-center d-sm-none d-md-none d-none d-lg-flex d-xl-flex" style="color: #fff!important; width: fit-content;" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+             Đăng Ký
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title b" id="exampleModalLabel">Đăng Ký</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="dangky.php" method="post" role="form">
+                      <div class="container">
+                        <label class="b" for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Nhập email" name="email" required="">
+                    
+                        <label class="b" for="psw"><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập mật khẩu" name="psw" required="">
+                    
+                        <label class="b" for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat" required="">   
+                        <button type="submit" class="modal-login">Đăng ký</button>
+                        <label>
+                          <input class="b" type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Ghi nhớ tôi
+                        </label>                                                            
+                        <div class="b">Bằng cách tạo một tài khoản, bạn đồng ý với <a href="#" style="color:dodgerblue">Điều khoản &amp; Quyền riêng tư</a>.</div>
+                        <div class="clearfix">
+                          <button type="button" class="cancelbtn">Thoát</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>              
+    </header>
+          <!-- main -->
+          <div class="container containerr">
+            <main>
+              <h3 class="chonoi"><a href="chuaphuochau_vl.html"><i class="fa-solid fa-arrow-left"></i></a>
+                  KHÁM PHÁ KHU DU LỊCH SINH THÁI HOÀNG HẢO SIÊU ĐẸP Ở VĨNH LONG
+                  <a href="logachmangthit_vl.html"><i class="fa-solid fa-arrow-right"></i></a></h3>
+              <p>Những ai muốn một lần trở về chốn thanh bình yên ả của vùng quê miệt vườn, hít thở không khí trong lành và ăn những món ăn dân gian đậm đà thì khu du
+                   lịch sinh thái Hoàng Hảo đúng là một lựa chọn lí tưởng.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/03/khudulichhoanghaovinhlong.jpg" alt="">
+              <p>Nằm trên tuyến quốc lộ số 57, cách phà Đình Khao 2 km, khu du lịch sinh thái Hoàng Hảo thuộc khu vực xã Thanh Đức, huyện Long Hồ, tỉnh Vĩnh Long. 
+                  Hoàng Hảo là một khu du lịch sinh thái mới toanh siêu đẹp của tỉnh Vĩnh Long. Nơi đây không chỉ sở hữu khung cảnh xanh tươi mát mẻ mà còn có bầu
+                   không khí vô cùng trong lành.</p>
+              <p>Mặc dù mới đi vào hoạt động từ năm 2019 nhưng đã nhanh chóng trở thành điểm vui chơi, giải trí và nghỉ dưỡng lý tưởng cho mọi tầng lớp người dân 
+                  Vĩnh Long nói riêng và khách du lịch đến vùng Đồng bằng sông Cửu Long nói chung.</p>
+              <p>Toàn thể khuôn viên của Hoàng Hảo được bao quanh bởi một rừng cây xanh rộng lớn. Khi nhìn từ trên cao xuống bạn sẽ có cảm giác như đây chính là 
+                  một ốc đảo nhỏ trong rừng sâu. Đến với Hoàng Hảo bạn sẽ được tận hưởng trọn vẹn cảm giác yên bình và tĩnh lặng của miền Tây sông nước.</p>
+              <p>Không gian tại khu du lịch Hoàng Hảo được thiết kế đậm chất miệt vườn Miền Tây với những dòng nước nhỏ tựa con sông mini chảy xuyên suốt toàn bộ 
+                  khu du lịch. Hai bên bờ sẽ được nối với nhau bởi cây cầu khỉ bắc qua rất độc đáo và thú vị.</p>
+              <p>Với tổng diện tích xây dựng gần 68ha, khu du lịch sinh thái Hoàng Hảo Vĩnh Long mang đến đa dạng các dịch vụ vui chơi giải trí hấp dẫn, phù hợp cho
+                   cả người lớn lẫn trẻ nhỏ.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/03/khudulichhoanghao1.jpg" alt="">
+              <p>Đến với khu du lịch sinh thái Hoàng Hảo, du khách sẽ được hòa mình vào khung cảnh thiên nhiên trong lành, được tham gia các dịch vụ mang đậm chất dân 
+                  dã miệt vườn như: câu cá, bơi xuồng, tát mương bắt cá, bắt vịt, bắt ếch… Đối với những ai thích mạo hiểm có thể trải nghiệm chạy xe đạp qua cầu ván,
+                   hoặc đi cầu khỉ và tham gia nhiều trò chơi khác trong khu trò chơi phức hợp.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/03/khudulichhoanghao2.jpg" alt="">
+              <p>Đặc biệt, hai trò chơi nổi tiếng được nhiều du khách yêu thích tại làng du lịch chính là bóng Zorbing  một trò chơi khiến cho quả bóng lăn từ trên 
+                  đồi cỏ có độ dốc vừa phải và trò chơi bóng lăn nước sắc màu.
+
+                  Ngoài ra, với diện tích lớn, không gian rộng, khu du lịch sinh thái Hoàng Hảo còn là địa điểm thuận lợi, lý tưởng để tổ chức team building, cắm trại,
+                   dã ngoại, sinh hoạt ngoại khóa, trải nghiệm kỹ năng sống. </p>
+              
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/03/khudulichhoanghao02.jpg" alt="">
+              <p>Tại Hoàng Hảo còn có một khu vực nhà mini nhằm phục vụ nhu cầu qua đêm của du khách. Những căn nhà mini được lợp bằng mái tranh, mái tôn, phía dưới là
+                   những bức tường rực rỡ màu sắc rất nổi bật.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/03/khudulichhoanghao.jpg" alt="">
+               <p>Bên cạnh đó, phía trước dãy nhà mini là một ao sen vô cùng rộng lớn. Những cây sen phủ kín cả mặt hồ, vào mùa sen nở, nơi đây sẽ được bao phủ bởi một
+                    sắc hồng nhạt quyến rũ và hương thơm nồng nàn tạo nên một khung cảnh vô cùng lãng mạn.</p>   
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/03/khudulichhoanghao-vinhlong.jpg" alt="">    
+              <p>Sau một ngày dài tham gia các trò chơi vận động tại Hoàng Hảo thì bạn có thể đến chọn một căn nhà mini ở trong khuôn viên khu du lịch để nghỉ ngơi.
+                   Mỗi buổi sáng thức dậy bạn sẽ được hít thở bầu không khí trong lành, ngắm nhìn những bông sen dần dần nở rộ và nghe tiếng chim hót từ xa. Quả thật 
+                   là một cuộc sống hòa cùng thiên nhiên đáng mơ ước.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/03/khudulichhoanghao-1.jpg" alt="">
+              <p>Đặc biệt đến khu du lịch Hoàng Hảo, bạn đừng quên đến khu nhà hàng siêu rộng ở ngay trong khuôn viên khu du lịch sinh thái Hoàng Hảo để thưởng thức 
+                  những món ăn đặc trưng của Miền Tây.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/03/khudulichhoanghao-2.jpg" alt="">
+              <p>Với thiết kế hài hòa thiên nhiên nên không gian ở đây vô cùng thoáng mát. Bạn có thể thử các món ăn đặc trưng như: cơm gà nướng, bánh xèo, lẩu mắm 
+                  Nam Bộ, cá tai tượng chiên xù, củ sen muối chua ngọt, bánh củ sen,… Tất cả đều mang hương vị miền sông nước vô cùng thơm ngon khiến bạn không thể 
+                  quên dù chỉ thử qua một lần. Đặc biệt, du khách ưa khám phá sẽ được tận hưởng giây phút thích thú, sảng khoái với hình ảnh đàn cá lóc bay lên khỏi
+                   mặt nước để đớp mồi và có thể tự chế biến các món bánh dân gian Nam bộ: bánh xèo, bánh khọt, hay bánh lá…</p>
+                  </section>
+                </main>
+              </div>
+                  <!--footer-->
+                  <footer class="py-5">
+                    <div class="container">
+                    <div class="row">
+                    <div class="col">
+                        <h5>Trang</h5>
+                        <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="trangchu.html" class="nav-link p-0 ">Trang chủ</a></li>
+                        <li class="nav-item mb-2"><a href="gioithieu.html" class="nav-link p-0 ">Giới thiệu</a></li>
+                        <li class="nav-item mb-2"><a href="diadiem.html" class="nav-link p-0 ">Địa điểm</a></li>
+                        <li class="nav-item mb-2"><a href="" class="nav-link p-0 ">Các tỉnh/thành</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h5 class="text4">Liên hệ chúng tôi</h5>
+                        <div class="">
+                            <p>Email: travel@gmail.com</p>
+                            <p>Số điện thoại: 090.789.6768 </p>
+                        </div>
+                    </div>
+                
+                        <div class="col">
+                            <h5 class="text4">Lời nhắn</h5>
+                            <div class="">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">Họ và tên: </span>
+                                    <input type="" class="form-control" placeholder="Nhập họ và tên" aria-label="name" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">Email: </span>
+                                    <input type="" class="form-control" placeholder="Nhập email của bạn" aria-label="email" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-text">Lời nhắn</span>
+                                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                                </div>
+                                <div class="button">
+                                    <button type="button" class="btn btn-primary" style="margin-top: 5px;" >Gửi</button>
+                                    
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="d-flex justify-content-between py-4 my-4 border-top">
+                    <p>© 2022 Company, Inc. All rights reserved.</p>
+                    <div class="">
+                        <div class="col">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="col">                      </ul>
+                    </div>
+                  </div>
+                </footer>
+           <a href="#" class="gotop"> <i class="fa-solid fa-arrow-up"></i> </a>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript">
+           var owl = $('.owl-carousel');
+            owl.owlCarousel({
+            items:4,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:1000,
+            autoplayHoverPause:true
+        });
+        $('.play').on('click',function(){
+            owl.trigger('play.owl.autoplay',[1000])
+        })
+        $('.stop').on('click',function(){
+            owl.trigger('stop.owl.autoplay')
+        })
+        </script>
+  
+  </div>
+  
+  </body>
+          
+  </html>

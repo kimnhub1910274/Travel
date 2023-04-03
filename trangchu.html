@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Fontawesome -->
+        <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="fontawesome-free-6.0.0/css/all.min.css">
+        
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <title>
+          
+         Trang Chủ</title>
+      </head>
+  <body>
+   
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <header class="header">
+      <div class="container d-flex justify-content-between">
+        <!-- logo -->
+        <a href="trangchu.html"class="logo">
+          Travel
+        </a>
+        <ul class="menu_nav d-sm-none d-none d-md-none d-lg-flex d-xl-flex">
+          <li class="align-self-center">
+            <a class="px-2 item_menu active_nav" href="trangchu.html">
+              TRANG CHỦ
+            </a>
+          </li>
+          <li class="align-self-center">
+            <a class="px-2 item_menu" href="gioithieu.html">
+              GIỚI THIỆU
+            </a>
+          </li>
+          <li class="align-self-center">
+            <a class="px-2 item_menu" href="tintuc.html">
+              TIN TỨC
+            </a>
+          </li>
+          <li class="align-self-center">
+            <a class="px-2 item_menu" href="cactinh.html">
+                CÁC TỈNH/THÀNH
+            </a>
+          </li>
+        </ul>
+        <!-- offcanvas menu-->
+        <div class="d-flex">
+          <div class="align-self-center me-3">
+            <nav class="navbar navbar-expand-xl navbar-expand-lg navbar-light">
+              <!-- nút menu -->
+              <button class="navbar-toggler" style="background-color: #ec6408;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- offcanvas -->
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <a href="trangchu.html"class="logo" style="color: #ec6408;">
+                    Travel
+                  </a>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <form class="d-flex mx-2">
+                  <input class="form-control search me-2 align-self-center" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <div class="offcanvas-body p-0 mt-3">
+                    <ul class="menu_nav">
+                      <li class="py-2 m-2" style=" border-bottom: 1px solid rgba(0,0,0,0.1);">
+                        <a class="px-2 item_menu text-dark" href="trangchu.html">
+                          TRANG CHỦ
+                        </a>
+                      </li>
+                      <li class="py-2 m-2" style=" border-bottom: 1px solid rgba(0,0,0,0.1);">
+                        <a class="px-2 item_menu text-dark" href="gioithieu.html">
+                          GIỚI THIỆU
+                        </a>
+                      </li>
+                      <li class="py-2 m-2" style=" border-bottom: 1px solid rgba(0,0,0,0.1);">
+                        <a class="px-2 item_menu text-dark" href="tintuc.html">
+                          TIN TỨC
+                        </a>
+                      </li>
+                      <li class="py-2 m-2" style=" border-bottom: 1px solid rgba(0,0,0,0.1);">
+                        <a class="px-2 item_menu text-dark" href="cactinh.html">
+                            CÁC TỈNH/THÀNH
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="d-sm-none d-md-none d-none d-lg-flex d-xl-flex align-self-center me-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-magnifying-glass search_icon"></i>
+          </div>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="background: none; border: none;">
+                    <button data-bs-dismiss="modal" aria-label="Close" style="width: 525px;">
+                      <i class="fa-solid fa-xmark" style="float: right;
+                      font-size: 22px;
+                      color: #fff;
+                      margin: 5px;">
+                      </i>
+                    </button>
+                    <form class="search text-decoration-none align-self-center me-1" >
+                      <input type="text" title="Tìm kiếm tỉnh, thành phố, địa điểm...." placeholder="Tìm kiếm tỉnh, thành phố, địa điểm">
+                      <button type="submit">Tìm</button>
+                  </form>
+                </div>
+            </div>
+          </div>
+          <!-- Dang nhap -->
+          <button type="button" class="btn ms-2 align-self-center d-sm-none d-md-none d-none d-lg-flex d-xl-flex" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            Đăng Nhập
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Đăng Nhập</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="dangnhap.php" method="post" role="form">
+
+                    <div class="container">
+                      <label for="username"><b>Tên đăng nhập</b></label>
+                      <input type="text" placeholder="Nhập tên đăng nhập" name="username" required>
+                  
+                      <label for="password"><b>Mật khẩu</b></label>
+                      <input type="password" placeholder="Nhập mật khẩu" name="password" required>
+                  
+                      <button type="submit" class="modal-login">Đăng nhập</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Ghi nhớ tôi
+                      </label>
+                    </div>
+                  
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" class="cancelbtn">Thoát</button>
+                      <span class="psw">Quên <a href="#">mật khẩu?</a></span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- Dang ký -->
+            <button type="button" class="btn ms-2 align-self-center d-sm-none d-md-none d-none d-lg-flex d-xl-flex" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            Đăng Ký
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Đăng Nhập</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="dangky.php" style="border:1px solid #ccc" method="post" role="form">
+                    <div class="container">
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Nhập email" name="email" required>
+                  
+                      <label for="psw"><b>Mật khẩu</b></label>
+                      <input type="password" placeholder="Nhập mật khẩu" name="psw" required>
+                  
+                      <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+                      <input type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat" required>
+                  
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Ghi nhớ tôi
+                      </label>
+                  
+                      <p>Bằng cách tạo một tài khoản, bạn đồng ý với <a href="#" style="color:dodgerblue">Điều khoản & Quyền riêng tư</a>.</p>
+                  
+                      <div class="clearfix">
+                        <button type="button" class="cancelbtn">Thoát</button>
+                        <button type="submit" class="signupbtn">Đăng ký</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>              
+    </header>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/banner7.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Hà Giang</h5>
+            <p>Hoàng Su Phì với những thửa ruộng bậc thang đẹp say lòng là điểm săn lúa chín nổi tiếng nhất Hà Giang.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Long An</h4>
+            <p>Mỹ Hạnh Bắc là vùng đất phèn nên nông dân có thể trồng cây cỏ bàng làm nguyên liệu trong sản xuất ống hút thay thế cho ống hút nhựa để bảo vệ môi trường.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/nam-can-mui-ca-mau.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Khu du lịch quốc gia Đất Mũi Cà Mau</h4>
+            <p>Khi có dịp du lịch Cà Mau và đến với vườn quốc gia Mũi Cà Mau, du khách sẽ ấn tượng với những điều thú vị có một không hai của nơi này.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- main -->
+    <main>
+      <!-- Gioi thieu -->
+      <div class="d-flex container">
+        <!-- <img src="images/bando.png" alt="" width="400px" height="550px" class="m-3 align-self-center bando"> -->
+        <div class="m-3 gioithieu_vn">
+          <h1>Việt Nam</h1>
+          <p class="text-center">Lãnh thổ Việt Nam được chia thành 3 vùng và 8 miền với 
+              63 tỉnh thành. Thay vì trước đây bao gồm 64 tỉnh thành, 
+              nhưng năm 2008 sáp nhập Hà Tây vào Hà Nội nên còn 
+              63 tỉnh và thành phố. Mỗi vùng miền ở nước ta trải dài từ Bắc vào Nam đều có 
+              những nét đẹp riêng với những phong cảnh đặc trưng 
+              từng vùng miền. Nếu có ít thời gian bạn có thể khám phá 
+              từng địa điểm du lịch một và tuyệt nhất nếu bạn có đủ thời 
+              gian nên thực hiện chuyến du lịch xuyên Việt 63 tỉnh 
+              thành Việt Nam.
+          </p>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img height="160px" src="images/phuquoc.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Phú Quốc (Miền Nam)</h5>
+                  <p class="card-text text-center">Nếu bạn đang tìm kiếm điểm đến mạo hiểm tiếp theo của mình, Phú Quốc nên là một đối thủ nặng ký; đây là một số trải nghiệm độc đáo mà bạn có thể tận hưởng.</p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img height="160px" src="images/hoian.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Quảng Nam (Miền Trung)</h5>
+                  <p class="card-text text-center">Hãy dành nửa ngày của bạn trong Tour đi bộ Phố Cổ & Ẩm thực Đường phố để tham quan các di tích lịch sử của Phố Cổ Hội An và nếm thử các món ăn đường phố mang tính biểu tượng.</p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img height="160px" src="images/taynguyen.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Lào Cai (Miền Bắc)</h5>
+                  <p class="card-text text-center">Tây Nguyên - cao nguyên nắng gió, mùi cafe lẩn quất, những già làng móm mém, tiếng cồng chiêng trầm ấm. Du lịch Tây Nguyên để cảm nhận hết những điều này.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- gioi thieu miền tây-->
+      <div class="gioithieu_mt" >
+        <div class="container d-flex ">
+          <div class=" p-3">
+            <h1>Chào các bạn đến với du lịch miền Tây sông nước</h3>
+              <p>Đến với miền Tây bạn nhất định không thể bỏ qua chợ Nổi – một nét văn hóa độc đáo mà chỉ có những người dân vùng sông nước có được. Chợ Nổi là những khu chợ mua bán mà người bán và người mua buộc phải dùng thuyền hoặc ghe làm phương tiện đi lại và vận chuyển.  Thường thì chợ sẽ được họp vào buổi sáng sớm ở các ngã của các con kênh, con sông giao nhau và mực nước không quá thấp...
+            </p>
+            <button class="btn btn-outline-light">
+              Xem Thêm
+            </button>
+          </div>
+            <img src="images/chonoi.png" alt="" width="350px" height="350px">
+        </div>
+      </div>
+      <div class="welcom container">
+        <h1>Địa điểm nổi bật</h1>
+        <div class="owl-carousel owl-theme">
+          <div class="card" style="height: 350px;">
+              <a href="chonoi_vl">
+                  <img class="hinh1 rounded" src="images/vinh-long/chonoi-cut.png" width="250px" height="210px">
+                </a>
+              <div class="card-body">
+                <p class="text2 card-text"><b>Chợ nổi Trà Ôn</b> – Nơi cả người bán và người mua đều dùng ghe/thuyền làm phương tiện vận tải và di chuyển</p>
+              </div>
+          </div>
+          <div class="card" style="height: 350px;">
+              <a href="chuaphuochau_vl.html">
+                  <img class="hinh1 rounded" src="images/vinh-long/vuon-kinh-phat-bang-da.jpg" width="250px" height="210px"></a>
+              <p class="text2">Những bài kinh khắc trên đá rất 
+                  độc đáo được đặt trong khuôn
+                  viên  <b>chùa Phước Hậu</b>.
+                  </p>
+          </div>
+          <div class="card" style="height: 350px;">      
+              <a href="kdlsthoanghao_vl.html">
+                  <img class="hinh1 rounded" src="images/vinh-long/khudulichhoanghaovinhlong.jpg" width="250px" height="210px"></a>
+              <p class="text2"> <b>Du lịch sinh thái Hoàng Hảo</b> – 
+                  Ngôi nhà mini màu sẵn bắt mắt.
+                  </p>
+          </div><div class="card" style="height: 350px;">
+              <a href="logachmangthit_vl.html">
+                  <img class="hinh1 rounded" src="images/vinh-long/-lo-gach.jpg" width="250px" height="210px"></a>
+              <p class="text2"><b>Lò gạch Mang Thít</b> đẹp thơ mộng trong sương sớm Lò gạch Mang Thít đẹp thơ mộng trong sương sớm.
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- miền trung -->
+      <div class="gioithieu_mt" >
+        <div class="container d-flex ">
+          <img src="images/hoian2.png" alt="" width="350px" height="350px">
+          <div class=" p-3">
+            <h1>Chào các bạn đến với vẻ đẹp đặc sắc miền Trung</h3>
+            <p>Có thể chưa đủ để diễn tả hết vẻ đẹp của Hội An, nhưng những bức ảnh dưới đây chắc chắn sẽ thôi thúc bạn nhanh chân lên để được sớm nhìn tận mắt những khung cảnh này.
+              Ta yêu Hội An vì lẽ gì? Là vẻ yên bình cũ kỹ khó tìm được ở Sài Gòn tấp nập hay chốn Hà Thành phồn hoa? Hay là vì những món ăn ngon trứ danh "cộp mác" đặc sản Hội An ai ghé qua cũng phải thử?...
+            </p>
+            <button class="btn btn-outline-light float-end">
+              Xem Thêm
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="welcom container">
+        <h1>Địa điểm nổi bật</h1>
+        <div class="owl-carousel owl-theme">
+          <div class="card" style="height: 350px;">
+              <a href="chonoi_vl">
+                  <img class="hinh1 rounded" src="images/phongnha.png" width="250px" height="210px"></a>
+              <p class="text2"><b>Phong Nha – Kẻ Bàng</b> – Hang Sơn Đoòng nằm trong vùng lõi của Vườn Quốc gia Phong Nha – Kẻ Bàng, tỉnh Quảng Bình.</p>
+          </div>
+          <div class="card" style="height: 350px;">
+              <a href="chuaphuochau_vl.html">
+                  <img class="hinh1 rounded" src="images/banahill.png" width="250px" height="210px"></a>
+              <p class="text2"><b>Bà Nà Hills</b> - Tour Bà Nà Hills 1 ngày khởi hành hàng ngày từ Đà Nẵng được thiết kế với lịch trình chi tiết, thời gian vui chơi bất tận.
+                  </p>
+          </div>
+          <div class="card" style="height: 350px;">      
+              <a href="kdlsthoanghao_vl.html">
+                  <img class="hinh1 rounded" src="images/culaocham.png" width="250px" height="210px"></a>
+              <p class="text2"> <b>Cù Lao Chàm</b> – 
+                Bãi Xếp Cù Lao Chàm là cái tên được biết đến là “hòn ngọc thô” hút hồn bao người mê du lịch.
+                  </p>
+          </div><div class="card" style="height: 350px;">
+              <a href="logachmangthit_vl.html">
+                  <img class="hinh1 rounded" src="images/daolyson.png" width="250px" height="210px"></a>
+              <p class="text2"><b>Đảo Lý Sơn</b> - Lý Sơn trước đây được gọi là cù lao Ré mà theo cách lý giải của dân gian là "cù lao có nhiều cây Ré".
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- mien bac -->
+      <div class="gioithieu_mt" >
+        <div class="container d-flex ">
+          <div class=" p-3">
+            <h1>Chào các bạn đến với miền Bắc vùng cao non nước</h3>
+            <p>Nếu có ai hỏi về những cảnh đẹp miền Bắc, chắc chắn khách du lịch sẽ gọi tên Sapa đầu tiên. Và nếu có thể dùng những từ ngắn gọn nhất để nói về Sapa thì chỉ có thể là tuyệt đẹp. Sa Pa là một thị trấn vùng cao ở phía Tây Bắc Việt Nam, nơi quanh năm mây mờ che phủ và những thửa ruộng bậc thang trải dài như dẫn lối đến thiên đường Với cảnh quang thiên nhiên hùng vĩ, ngoạn mục, cùng nền văn hóa dân tộc vùng cao  phong phú, đặc sắc, Sa Pa  “mê hoặc” tất cả du khách khi đặt chân đến đây...
+            </p>
+            <button class="btn btn-outline-light">
+              Xem Thêm
+            </button>
+          </div>
+          <img src="images/sapa.png" alt="" width="350px" height="350px">
+        </div>
+      </div>
+
+      <div class="welcom container">
+        <h1>Địa điểm nổi bật</h1>
+        <div class="owl-carousel owl-theme">
+          <div class="card" style="height: 350px;">
+              <a href="chonoi_vl">
+                  <img class="hinh1 rounded" src="images/trangan.png" width="250px" height="210px"></a>
+              <p class="text2"><b> Tràng An</b> – Trong khi mọi người kéo nhau đi ngắm hoa tam giác mạch nở, thì tôi lại lẳng lặng xuôi dòng Tràng An để tìm chút bình yên thư thái.</p>
+          </div>
+          <div class="card" style="height: 350px;">
+              <a href="chuaphuochau_vl.html">
+                  <img class="hinh1 rounded" src="images/vinhalong.png" width="250px" height="210px"></a>
+              <p class="text2"><b>Vịnh Hạ Long</b> - Nơi đây được ví như mỏ vàng du lịch với nhiều cảnh quan thiên nhiên và cuộc sống con người khá hoang sơ và thanh bình.
+                  </p>
+          </div>
+          <div class="card" style="height: 350px;">      
+              <a href="kdlsthoanghao_vl.html">
+                  <img class="hinh1 rounded" src="images/mocchau.png" width="250px" height="210px"></a>
+              <p class="text2"> <b>Mộc Châu</b> – 
+                Không nóng bức và oi ả như mùa hạ, cũng không lạnh lẽo như mùa đông, có lẽ mùa thu là mùa được nhiều người yêu thích nhất.
+                  </p>
+          </div><div class="card" style="height: 350px;">
+              <a href="logachmangthit_vl.html">
+                  <img class="hinh1 rounded" src="images/maichau.png" width="250px" height="210px"></a>
+              <p class="text2"><b>Mai Châu</b> - Mỗi mùa, cảnh vật nơi đây lại mang trong mình vẻ đẹp riêng, mùa đông là ruộm vàng hoa cải thì đầu xuân, mận lại nở trắng trời.
+              </p>
+          </div>
+        </div>
+      </div>
+    </main>
+          <!--footer-->
+    <footer class="py-5 " >
+      <div class="container">
+        <button onclick="topFunction()" id="mybtn" class="gotop" title="Go to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+        <div class="row">
+          <div class="col">
+              <h5 class="text-light "><b>Trang</b></h5>
+              <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Trang chủ</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Giới Thiệu</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Địa Điểm</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Các Tỉnh/ Thành</a></li>
+              </ul>
+          </div>
+      
+          <div class="col">
+              <h5 class="text-light"><b>Giới thiệu chúng tôi</b></h5>
+              <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Về chúng tôi</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Tài nguyên và chính sách</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Tin cậy an toàn</a></li>
+              </ul>
+          </div>
+
+          <div class="col">
+              <h5 class="text-light"><b>Liên hệ chúng tôi</b></h5>
+              <p class="text-light m-0">Email: travel@gmail.com</p>
+              <p class="text-light">Số điện thoại: 090.789.6768 </p>
+          </div>
+      
+          <div class="col">
+              <h5 class="text-light"><b>Lời nhắn</b></h5>
+              <div class="">
+                <div class="input-group mb-2">
+                    <span class="input-group-text" id="basic-addon1">Họ và tên: </span>
+                    <input type="" class="form-control" placeholder="Nhập họ và tên" aria-label="name" aria-describedby="">
+                </div>
+                <div class="input-group mb-2">
+                    <span class="input-group-text" id="basic-addon1">Email: </span>
+                    <input type="" class="form-control" placeholder="Nhập email của bạn" aria-label="email" aria-describedby="">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Lời nhắn</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+                <div class="button py-2">
+                    <button type="button" class="btn btn_main" >Gửi</button>
+                    
+                </div>
+              </div> 
+          </div>
+        </div>
+      
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p class="text-light">© 2022 Company, Inc. All rights reserved.</p>
+        <div class="row">
+          <i style="font-size: 22px; color: #fff; padding: 5px;" class="col-3 fa-brands fa-facebook"></i>
+          <i style="font-size: 22px; color: #fff; padding: 5px;" class="col-3 fa-brands fa-instagram"></i>
+          <i style="font-size: 22px; color: #fff; padding: 5px;" class="col-3 fa-brands fa-twitter"></i>
+        </div>
+
+      </div>
+    </footer>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script type="text/javascript">
+        var owl = $('.owl-carousel');
+          owl.owlCarousel({
+          items:4,
+          loop:true,
+          margin:10,
+          autoplay:true,
+          autoplayTimeout:1000,
+          autoplayHoverPause:true
+      });
+      $('.play').on('click',function(){
+          owl.trigger('play.owl.autoplay',[1000])
+      })
+      $('.stop').on('click',function(){
+          owl.trigger('stop.owl.autoplay')
+      })
+      </script>
+
+      </div>
+      <!-- active -->
+      <script>
+          $(document).ready(function(){
+            $('.item_menu').click(function(){
+                $(this).addClass('active_nav').siblings().removeClass('active_nav');
+              })
+        })
+      </script>
+      <!-- nut top -->
+  <script>
+    var mybutton = document.getElementById("mybtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+        }
+    }
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<!-- header-fixed -->
+<script>
+  $(document).ready(function(){
+      $(window).scroll(function(){
+          if($(this).scrollTop()){
+              $('.header').addClass('fixed');
+          }
+          else{
+              $('.header').removeClass('fixed');
+          }
+      })
+      
+  })
+</script>
+    </body>
+</html>

@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Fontawesome -->
+        <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="fontawesome-free-6.0.0/css/all.min.css">
+        
+   
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/diadiem.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Địa Điểm</title>
+      </head>
+  <body>
+   
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>    
+    <header class="header" style="background-color: #292f35; position: relative;">
+      <div class="container d-flex justify-content-between">
+        <!-- logo -->
+        <a href="trangchu.html"class="logo">
+          Travel
+        </a>
+        <ul class="menu_nav d-sm-none d-none d-md-none d-lg-flex d-xl-flex">
+          <li class="align-self-center">
+            <a class="px-2 item_menu " href="trangchu.html">
+              TRANG CHỦ
+            </a>
+          </li>
+          <li class="align-self-center">
+            <a class="px-2 item_menu" href="gioithieu.html">
+              GIỚI THIỆU
+            </a>
+          </li>
+          <li class="align-self-center">
+            <a class="px-2 item_menu " href="tintuc.html">
+              TIN TỨC
+            </a>
+          </li>
+          <li class="align-self-center">
+            <a class="px-2 item_menu" href="cactinh.html">
+                CÁC TỈNH/THÀNH
+            </a>
+          </li>
+        </ul>
+        <!-- offcanvas menu-->
+        <div class="d-flex">
+          <div class="align-self-center me-3">
+            <nav class="navbar navbar-expand-xl navbar-expand-lg navbar-light">
+              <!-- nút menu -->
+              <button class="navbar-toggler" style="background-color: #ec6408;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- offcanvas -->
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <a href="trangchu.html"class="logo" style="color: #ec6408;">
+                    Travel
+                  </a>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <form class="d-flex mx-2">
+                  <input class="form-control search me-2 align-self-center" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <div class="offcanvas-body p-0 mt-3">
+                    <ul class="menu_nav">
+                      <li class="py-2 m-2" style=" border-bottom: 1px solid rgba(0,0,0,0.1);">
+                        <a class="px-2 item_menu text-dark" href="trangchu.html">
+                          TRANG CHỦ
+                        </a>
+                      </li>
+                      <li class="py-2 m-2" style=" border-bottom: 1px solid rgba(0,0,0,0.1);">
+                        <a class="px-2 item_menu text-dark" href="gioithieu.html">
+                          GIỚI THIỆU
+                        </a>
+                      </li>
+                      <li class="py-2 m-2" style=" border-bottom: 1px solid rgba(0,0,0,0.1);">
+                        <a class="px-2 item_menu text-dark" href="tintuc.html">
+                          TIN TỨC
+                        </a>
+                      </li>
+                      <li class="py-2 m-2" style=" border-bottom: 1px solid rgba(0,0,0,0.1);">
+                        <a class="px-2 item_menu text-dark" href="cactinh.html">
+                            CÁC TỈNH/THÀNH
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="d-sm-none d-md-none d-none d-lg-flex d-xl-flex align-self-center me-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-magnifying-glass search_icon"></i>
+          </div>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="background: none; border: none;">
+                    <button data-bs-dismiss="modal" aria-label="Close" style="width: 525px;">
+                      <i class="fa-solid fa-xmark" style="float: right;
+                      font-size: 22px;
+                      color: #fff;
+                      margin: 5px;">
+                      </i>
+                    </button>
+                    <form class="search text-decoration-none align-self-center me-1" >
+                      <input type="text" title="Tìm kiếm tỉnh, thành phố, địa điểm...." placeholder="Tìm kiếm tỉnh, thành phố, địa điểm">
+                      <button type="submit">Tìm</button>
+                  </form>
+                </div>
+            </div>
+          </div>
+          <!-- Dang nhap -->
+          <button type="button" class="btn ms-2 align-self-center d-sm-none d-md-none d-none d-lg-flex d-xl-flex" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            Đăng Nhập
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Đăng Nhập</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="dangnhap.php" method="post" role="form">
+
+                    <div class="container">
+                      <label for="username"><b>Tên đăng nhập</b></label>
+                      <input type="text" placeholder="Nhập tên đăng nhập" name="username" required>
+                  
+                      <label for="password"><b>Mật khẩu</b></label>
+                      <input type="password" placeholder="Nhập mật khẩu" name="password" required>
+                  
+                      <button type="submit" class="modal-login">Đăng nhập</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Ghi nhớ tôi
+                      </label>
+                    </div>
+                  
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" class="cancelbtn">Thoát</button>
+                      <span class="psw">Quên <a href="#">mật khẩu?</a></span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- Dang ký -->
+            <button type="button" class="btn ms-2 align-self-center d-sm-none d-md-none d-none d-lg-flex d-xl-flex" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            Đăng Ký
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Đăng Nhập</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="dangky.php" style="border:1px solid #ccc" method="post" role="form">
+                    <div class="container">
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Nhập email" name="email" required>
+                  
+                      <label for="psw"><b>Mật khẩu</b></label>
+                      <input type="password" placeholder="Nhập mật khẩu" name="psw" required>
+                  
+                      <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+                      <input type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat" required>
+                  
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Ghi nhớ tôi
+                      </label>
+                  
+                      <p>Bằng cách tạo một tài khoản, bạn đồng ý với <a href="#" style="color:dodgerblue">Điều khoản & Quyền riêng tư</a>.</p>
+                  
+                      <div class="clearfix">
+                        <button type="button" class="cancelbtn">Thoát</button>
+                        <button type="submit" class="signupbtn">Đăng ký</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>              
+    </header>
+
+      <!-- main -->
+    <main>
+      <div class="container tintuc1 my-3">
+        <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 col-left">
+                <div class="bong">
+                   <header class="px-3">
+                        <a href="tintuc.html">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            Tin Tức
+                        </a>
+                        <h3>Một ngày phượt cù lao Tân Phú Đông</h3>
+                        <p><span>Tiền Giang</span> - Cù lao Tân Phú Đông trong mắt độc giả Thành Phương là nơi có thiên nhiên trù phú, con người hiền hậu.</p>
+                   </header>
+                    <img src="images/culaocham2.png" alt="" width="100%" title="Đàn chim tung cánh trên vuông tôm.">
+                    <div class="p-3">
+                        <p>Địa danh Phú Đông được nhắc đến trong giai điệu trữ tình "Thương một người ở xa" của nhạc sĩ Hoàng Phương, nay là xã Phú Đông thuộc huyện Tân Phú Đông, tỉnh Tiền Giang.</p>      
+                        <p>Trước khi lên kế hoạch khám phá vùng đất Phú Đông, tôi đã được nghe người thân, bạn bè kể khá nhiều về quá khứ và hiện tại của vùng đất nằm giữa sông Mỹ Tho và Cửa Tiểu này. Đời sống của bà con còn khó khăn, thiếu thốn khi chưa thành lập huyện. Những câu chuyện đó thôi thúc tôi đến vùng đất này để vừa khám phá cảnh vật thiên nhiên vừa tìm hiểu đời sống người dân hiện nay.</p>  
+                    </div>
+                    <div class="chuthich px-3">
+                        <img src="images/culaocham1.png" alt="" class="col-12">
+                        <p><i>Đàn chim tung cánh trên vuông tôm</i></p>
+                    </div>
+                    <div class="px-3">
+                        <p>Từ trung tâm TP HCM, tôi và hai người bạn đồng hành chạy xe máy theo tuyến Quốc lộ 50 khoảng 2 tiếng đến huyện Gò Công Tây, tỉnh Tiền Giang. Từ đây, chúng tôi tiếp tục chạy theo đường hương lộ 10 để đến bến phà Tân Long. Chúng tôi lên phà qua cù lao Lợi Quan, và đặt chân lên huyện Tân Phú Đông.</p>
+                        <p>Nhờ sự dẫn đường nhiệt tình của một người bạn đang sinh sống tại Tân Phú Đông, chúng tôi đã ghé thăm những di tích, thắng cảnh nổi tiếng và khám phá nhiều điều thú vị ở xứ cù lao đang từng ngày "thay da đổi thịt" này. Đó là Di tích quốc gia Lũy pháo đài gắn liền với nghĩa quân của người anh hùng dân tộc Trương Định; khu du lịch sinh thái biển Cồn Cống với bãi bồi đậm màu phù sa, nhiều chim cò bay lượn; những vườn mãng cầu xiêm tươi tốt.</p>
+                        <p>Ấn tượng nhất là hình ảnh hàng trăm con chim xếp hàng đều răm rắp trên những ống nước, cây cầu trong các vuông nuôi tôm. Chúng đồng loạt cất cánh bay lên không trung khi có tiếng động mạnh. Một bức tranh thiên nhiên thật đẹp và bình yên hiện ra trước mắt khiến mọi người trong đoàn phải trầm trồ.</p>
+                    </div>
+                    <div class="chuthich px-3">
+                        <img src="images/culaocham3.png" alt="" class="col-12">
+                        <p><i>Bãi biển là nơi chim, cò tìm kiếm thức ăn.</i></p>
+                    </div>
+                    <div class="px-3">
+                        <p>Một ngày dạo chơi trên đất cù lao Tân Phú Đông, được ngắm nhìn thiên nhiên tươi đẹp, hít thở bầu không khí trong lành là những trải nghiệm thật tuyệt vời. Chúng tôi thoải mái tinh thần, tràn đầy năng lượng cho tuần làm việc tiếp theo.</p>
+                        <p>Chi phí cho cả hành trình khoảng 500.000 đồng một người, chủ yếu là tiền xăng xe, phí qua phà. Đồ ăn thức uống địa phương rẻ hơn nhiều so với thành thị. Các điểm di tích, vườn trái cây đều miễn phí tham quan.</p>
+                        <p>Để đến huyện Tân Phú Đông, chúng tôi phải đi bằng đường bộ, đường sông. Đường sá, bến phà đã được đầu tư sửa sang, mở rộng nên việc đi lại rất thuận lợi, bạn chỉ cần chuẩn bị một chiếc xe thật tốt và kiểm tra kỹ lưỡng máy móc trước khi di chuyển.</p>
+                    </div>
+                    <div class="tacgia px-3">
+                        Thành Phương
+                    </div>
+                    <div class="wrapper">
+                        <div class="text-center" style="color: #8a8a8a;">
+                            Chia Sẻ
+                        </div>
+                        <ul class="share">
+                            <li class="middle">
+                            <a class="share-icon" href="#">
+                                <i class="fa-solid fa-share"></i>
+                            </a> 
+                            <a class="facebook" href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a> 
+                            <a class="twitter" href="#">
+                                <i class="fa-brands fa-facebook-messenger"></i>
+                            </a> 
+                           
+                            </li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-right">
+                <h4>Bài viết mới nhất</h4>
+                <div class="row px-2">
+                    <a href="#" class="col-12 border-bottom py-2">
+                        Bốn khu nghỉ dưỡng cho mùa mưa ở Phú Quốc
+                    </a>
+                    <a href="#" class="col-12 border-bottom py-2">
+                        Lượng du khách đến các điểm vui chơi vượt kỳ vọng
+                    </a>
+                    <a href="#" class="col-12 border-bottom py-2">
+                        5 lý do Quy Nhơn là điểm đến của du lịch MICE
+                    </a>
+                    <a href="#" class="col-12 border-bottom py-2">
+                        Cầu kính Bạch Long lên báo nước ngoài
+                    </a>
+                    <a href="#" class="col-12 border-bottom py-2">
+                        Những điểm check-in khi tới Điện Biên Phủ
+                    </a>
+                </div>
+                
+            </div>
+
+            
+        </div>
+        
+
+      </div> 
+    </main>
+    <!--footer-->
+    <footer class="py-5" >
+      <div class="container">
+        <button onclick="topFunction()" id="mybtn" class="gotop" title="Go to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+        <div class="row">
+          <div class="col">
+              <h5 class="text-light "><b>Trang</b></h5>
+              <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Trang chủ</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Giới Thiệu</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Địa Điểm</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Các Tỉnh/ Thành</a></li>
+              </ul>
+          </div>
+      
+          <div class="col">
+              <h5 class="text-light"><b>Giới thiệu chúng tôi</b></h5>
+              <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Về chúng tôi</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Tài nguyên và chính sách</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Tin cậy an toàn</a></li>
+              </ul>
+          </div>
+
+          <div class="col">
+              <h5 class="text-light"><b>Liên hệ chúng tôi</b></h5>
+              <p class="text-light m-0">Email: travel@gmail.com</p>
+              <p class="text-light">Số điện thoại: 090.789.6768 </p>
+          </div>
+      
+          <div class="col">
+              <h5 class="text-light"><b>Lời nhắn</b></h5>
+              <div class="">
+                <div class="input-group mb-2">
+                    <span class="input-group-text" id="basic-addon1">Họ và tên: </span>
+                    <input type="" class="form-control" placeholder="Nhập họ và tên" aria-label="name" aria-describedby="">
+                </div>
+                <div class="input-group mb-2">
+                    <span class="input-group-text" id="basic-addon1">Email: </span>
+                    <input type="" class="form-control" placeholder="Nhập email của bạn" aria-label="email" aria-describedby="">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Lời nhắn</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+                <div class="button py-2">
+                    <button type="button" class="btn btn_main" >Gửi</button>
+                    
+                </div>
+              </div> 
+          </div>
+        </div>
+      
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p class="text-light">© 2022 Company, Inc. All rights reserved.</p>
+        <div class="row">
+          <i style="font-size: 22px; color: #fff; padding: 5px;" class="col-3 fa-brands fa-facebook"></i>
+          <i style="font-size: 22px; color: #fff; padding: 5px;" class="col-3 fa-brands fa-instagram"></i>
+          <i style="font-size: 22px; color: #fff; padding: 5px;" class="col-3 fa-brands fa-twitter"></i>
+        </div>
+
+      </div>
+    </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script type="text/javascript">
+        var owl = $('.owl-carousel');
+          owl.owlCarousel({
+          items:4,
+          loop:true,
+          margin:10,
+          autoplay:true,
+          autoplayTimeout:1000,
+          autoplayHoverPause:true
+      });
+      $('.play').on('click',function(){
+          owl.trigger('play.owl.autoplay',[1000])
+      })
+      $('.stop').on('click',function(){
+          owl.trigger('stop.owl.autoplay')
+      })
+      </script>
+
+      <!-- nut top -->
+      <script>
+        var mybutton = document.getElementById("mybtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            mybutton.style.display = "block";
+            } else {
+            mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    
+    </body>
+    
+</html>

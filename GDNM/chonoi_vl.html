@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="fontawesome-free-6.0.0/css/all.min.css">
+        
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/search.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/vinhlong.css">
+        <link rel="stylesheet" href="css/diemden.css">
+    
+        <title>Chợ nổi - Vĩnh Long</title>
+      </head>
+  <body>
+   
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <header class="header">
+      <div class="container d-flex justify-content-between">
+        <!-- logo -->
+        <a href="trangchu.html"class="logo">
+          Travel
+        </a>
+        <ul class="menu_nav d-sm-none d-none d-md-none d-lg-flex d-xl-flex">
+          <li class="align-self-center">
+            <a class="px-2 item_menu " href="trangchu.html">
+              TRANG CHỦ
+            </a>
+          </li>
+          <li class="align-self-center">
+            <a class="px-2 item_menu" href="gioithieu.html">
+              GIỚI THIỆU
+            </a>
+          </li>
+          <li class="align-self-center">
+            <a class="px-2 item_menu" href="tintuc.html">
+              TIN TỨC
+            </a>
+          </li>
+          <li class="align-self-center">
+            <a class="px-2 item_menu" href="cactinh.html">
+                CÁC TỈNH/THÀNH
+            </a>
+          </li>
+        </ul>
+        <!-- offcanvas menu-->
+        <div class="d-flex">
+          <div class="align-self-center me-3">
+            <nav class="navbar navbar-expand-xl navbar-expand-lg navbar-light">
+              <!-- nút menu -->
+              <button class="navbar-toggler" style="background-color: #ec6408;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- offcanvas -->
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <a href="trangchu.html"class="logo" style="color: #ec6408;">
+                    Travel
+                  </a>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <form class="d-flex mx-2">
+                  <input class="form-control search me-2 align-self-center" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <div class="offcanvas-body p-0 mt-3">
+                    <ul class="menu_nav">
+                      <li class="py-2 m-2" style=" border-bottom: 1px solid rgba(0,0,0,0.1);">
+                        <a class="px-2 item_menu text-dark" href="trangchu.html">
+                          TRANG CHỦ
+                        </a>
+                      </li>
+                      <li class="py-2 m-2" style=" border-bottom: 1px solid rgba(0,0,0,0.1);">
+                        <a class="px-2 item_menu text-dark" href="gioithieu.html">
+                          GIỚI THIỆU
+                        </a>
+                      </li>
+                      <li class="py-2 m-2" style=" border-bottom: 1px solid rgba(0,0,0,0.1);">
+                        <a class="px-2 item_menu text-dark" href="tintuc.html">
+                          TIN TỨC
+                        </a>
+                      </li>
+                      <li class="py-2 m-2" style=" border-bottom: 1px solid rgba(0,0,0,0.1);">
+                        <a class="px-2 item_menu text-dark" href="cactinh.html">
+                            CÁC TỈNH/THÀNH
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="d-sm-none d-md-none d-none d-lg-flex d-xl-flex align-self-center me-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-magnifying-glass search_icon"></i>
+          </div>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="background: none; border: none;">
+                    <button data-bs-dismiss="modal" aria-label="Close" style="width: 525px;">
+                      <i class="fa-solid fa-xmark" style="float: right;
+                      font-size: 22px;
+                      color: #fff;
+                      margin: 5px;">
+                      </i>
+                    </button>
+                    <form class="search text-decoration-none align-self-center me-1" >
+                      <input type="text" title="Tìm kiếm tỉnh, thành phố, địa điểm...." placeholder="Tìm kiếm tỉnh, thành phố, địa điểm">
+                      <button type="submit">Tìm</button>
+                  </form>
+                </div>
+            </div>
+          </div>
+          <!-- Dang nhap -->
+          <button type="button" class="btn ms-2 align-self-center d-sm-none d-md-none d-none d-lg-flex d-xl-flex" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            Đăng Nhập
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Đăng Nhập</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="dangnhap.php" method="post" role="form">
+
+                    <div class="container">
+                      <label for="username"><b>Tên đăng nhập</b></label>
+                      <input type="text" placeholder="Nhập tên đăng nhập" name="username" required>
+                  
+                      <label for="password"><b>Mật khẩu</b></label>
+                      <input type="password" placeholder="Nhập mật khẩu" name="password" required>
+                  
+                      <button type="submit" class="modal-login">Đăng nhập</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Ghi nhớ tôi
+                      </label>
+                    </div>
+                  
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" class="cancelbtn">Thoát</button>
+                      <span class="psw">Quên <a href="#">mật khẩu?</a></span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- Dang ký -->
+            <button type="button" class="btn ms-2 align-self-center d-sm-none d-md-none d-none d-lg-flex d-xl-flex" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            Đăng Ký
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Đăng Nhập</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="dangky.php" style="border:1px solid #ccc" method="post" role="form">
+                    <div class="container">
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Nhập email" name="email" required>
+                  
+                      <label for="psw"><b>Mật khẩu</b></label>
+                      <input type="password" placeholder="Nhập mật khẩu" name="psw" required>
+                  
+                      <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+                      <input type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat" required>
+                  
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Ghi nhớ tôi
+                      </label>
+                  
+                      <p>Bằng cách tạo một tài khoản, bạn đồng ý với <a href="#" style="color:dodgerblue">Điều khoản & Quyền riêng tư</a>.</p>
+                  
+                      <div class="clearfix">
+                        <button type="button" class="cancelbtn">Thoát</button>
+                        <button type="submit" class="signupbtn">Đăng ký</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>              
+    </header>
+    <div class="banner_gt">
+      <img src="images/cantho.png" class="d-block w-100">
+      <h1 class="centered">Cần Thơ</h1>
+    </div> 
+      
+        
+      <!-- main -->
+    <main>
+      <div class="container containerr">
+          <div class="chonoi">
+            <h3><a href="vinhlong.html"><i class="fa-solid fa-arrow-left"></i></a>
+              CHỢ NỔI TRÀ ÔN - NÉT VĂN HÓA GIAO THƯƠNG VÙNG SÔNG NƯỚC CỬU LONG
+              <a href="chuaphuochau_vl.html"><i class="fa-solid fa-arrow-right"></i></a></h3>
+          <p>Về Vĩnh Long, nghe đến cái tên chợ nổi Trà Ôn thì khách du lịch nào cũng biết và muốn ghé lại tham quan một lần bởi vì đây là một trong những ngôi chợ nổi sôi động và náo nhiệt nhất miền Tây thu hút hàng trăm thuyền bè đến giao thương mỗi ngày. Để biết thêm về chợ nổi Trà Ôn – nét đẹp văn hóa giao thương vùng sông nước Cửu Long, du khách hãy cùng Viet Fun Travel về huyện Trà Ôn, tỉnh Vĩnh Long để cùng khám phá địa điểm du lịch hấp dẫn này nhé!</p>
+          <img class="img1" src="https://halotravel.vn/wp-content/uploads/2021/04/cho-tra-on-nhon-nhip.jpg" alt="">
+          <p>Tiếng rao hò, tiếng trò chuyện, tiếng trả giá,…tất cả tạo nên một bản âm hưởng đậm chất miền sông nước. Với hơn 1 thế kỷ tồn tại, chợ đã và đang thu hút rất nhiều lượt du khách trong và ngoài nước đến tham quan mua sắm mỗi ngày.
+          </p>
+          
+          <p>Ngày nay, chợ nổi Trà Ôn là một những khu chợ nổi lớn nhất miền Tây. Đây là nơi diễn ra các hoạt động mua bán trao đổi sản phẩm của Vĩnh Long với các tỉnh lân cận khác. Hàng ngày thuyền ghe đi ra, đi vào nườm nượp làm cho không khí nơi đây lúc nào cũng nhộn nhịp, tấp nập.</p>
+          <img class="img1" src="https://halotravel.vn/wp-content/uploads/2021/04/khung-canh-cho.jpg" alt="">
+          <p>Chợ nổi Trà Ôn nằm cách Vàm khoảng 250m, cách trung tâm Vĩnh Long khoảng 40km. Để tham quan khu chợ này, bạn có thể lựa chọn đi xe khách, xe máy hoặc máy bay.</p>
+          <img class="img1" src="https://halotravel.vn/wp-content/uploads/2021/04/hop-cho-tra-on.jpg" alt="">
+          <p><b>Nên đi vào tháng mấy?</b>
+            Thời điểm lý tưởng nhất để khám phá chợ Trà Ôn đó chính là vào mùa nước nổi từ tháng 6 đến tháng 8. Đây là lúc những loại trái cây nhiệt đới như cam, quýt, xoài, dứa… vào mùa vụ. Quả nào quả nấy chín thơm nức mũi, ngọt lịm.
+            
+              </p>
+          
+          <img class="img1" src="https://halotravel.vn/wp-content/uploads/2021/04/ghe-ban-do-an-tren-song.jpg" alt="">
+          <p><b>Khám phá các sản vật nổi tiếng nhất miền Tây</b> 
+            Chợ nổi Trà Ôn họp rất sớm, từ lúc mọi người còn đang chìm vào giấc ngủ. Ghe thuyền từ khắp mọi nơi hội tụ về chợ buôn bán đủ loại sản vật ngon của Vĩnh Long. Bên cạnh những chiếc thuyền đầy ắp các loại trái cây như: chôm chôm, dưa hấu, măng cụt, sầu riêng… Bạn còn bắp gặp những đặc sản của vùng sông rạch như tôm, cá, hàu, bông súng, rau tươi,…</p>
+          <img class="img1" src="https://halotravel.vn/wp-content/uploads/2021/04/ghe-ban-trai-cay-o-tra-on.jpg" alt="">
+            <p>Giữa sông nước bao la, để quảng cáo mặt hàng mình bán, họ sẽ không dùng biển hiệu. Thay vào đó, chủ thuyền sẽ chọn hình thức “bẹo” cực kỳ độc đáo. Chỉ cần một cái sào, treo một vài trái cây mà mình bán là du khách có thể biết được chủ hàng đang bán gì. Đi thuyền trên sông, nếu muốn mua hàng hóa gì bạn chỉ cần kêu chủ thuyền ghé lại cạnh thuyền bán hàng mà mình muốn. 
+
+        </p>   
+          <img class="img1" src="https://halotravel.vn/wp-content/uploads/2021/04/cay-beo-cho-noi-tra-on-768x576.jpg" alt="">    
+          <p>Buổi chiều, chợ Trà Ôn vẫn còn nhiều thuyền bè tập trung quanh khu vực chợ nổi. Thế nhưng những chiếc thuyền này không còn nhiều hàng hóa như lúc sáng nữa. Nó đã trở thành nơi trú ngụ quen thuộc của những người dân sông miền Tây. Những con người chất phác trở về cuộc sống sinh hoạt thường ngày bên mâm cơm gia đình ấm cúng.</p>
+          <img class="img1" src="https://halotravel.vn/wp-content/uploads/2021/04/be-cho-day-chuoi.jpg" alt="">
+          <p>Đến với chợ nổi Trà Ôn mà không trải nghiệm ẩm thực nơi đây thì quả là đáng tiếc. Tại đây có các loại trái cây bốn mùa: xoài, dứa, mít, chuối, dừa xiêm, bưởi, cam sành, chuối… tươi ngon mới hái từ các miệt vườn để bạn thưởng thức. Đặc biệt không thể bỏ qua món bún bò viên ăn kèm với rau chuối. Đặc sản của huyện Trà Ôn chính là món cá Cháy với thịt ngon ngọt được chế biến nhiều món khác nhau như cháo cá, canh chua, lẩu mắm và cá kho rim với mía.</p>
+
+        </div> 
+      </div>
+    </main>
+    <!--footer-->
+    <footer class="py-5" >
+      <div class="container">
+        <button onclick="topFunction()" id="mybtn" class="gotop" title="Go to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+        <div class="row">
+          <div class="col">
+              <h5 class="text-light "><b>Trang</b></h5>
+              <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Trang chủ</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Giới Thiệu</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Địa Điểm</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Các Tỉnh/ Thành</a></li>
+              </ul>
+          </div>
+      
+          <div class="col">
+              <h5 class="text-light"><b>Giới thiệu chúng tôi</b></h5>
+              <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Về chúng tôi</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Tài nguyên và chính sách</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Tin cậy an toàn</a></li>
+              </ul>
+          </div>
+
+          <div class="col">
+              <h5 class="text-light"><b>Liên hệ chúng tôi</b></h5>
+              <p class="text-light m-0">Email: travel@gmail.com</p>
+              <p class="text-light">Số điện thoại: 090.789.6768 </p>
+          </div>
+      
+          <div class="col">
+              <h5 class="text-light"><b>Lời nhắn</b></h5>
+              <div class="">
+                <div class="input-group mb-2">
+                    <span class="input-group-text" id="basic-addon1">Họ và tên: </span>
+                    <input type="" class="form-control" placeholder="Nhập họ và tên" aria-label="name" aria-describedby="">
+                </div>
+                <div class="input-group mb-2">
+                    <span class="input-group-text" id="basic-addon1">Email: </span>
+                    <input type="" class="form-control" placeholder="Nhập email của bạn" aria-label="email" aria-describedby="">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Lời nhắn</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+                <div class="button py-2">
+                    <button type="button" class="btn btn_main" >Gửi</button>
+                    
+                </div>
+              </div> 
+          </div>
+        </div>
+      
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p class="text-light">© 2022 Company, Inc. All rights reserved.</p>
+        <div class="row">
+          <i style="font-size: 22px; color: #fff; padding: 5px;" class="col-3 fa-brands fa-facebook"></i>
+          <i style="font-size: 22px; color: #fff; padding: 5px;" class="col-3 fa-brands fa-instagram"></i>
+          <i style="font-size: 22px; color: #fff; padding: 5px;" class="col-3 fa-brands fa-twitter"></i>
+        </div>
+
+      </div>
+    </footer>
+  </body>   
+</html>

@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="fontawesome-free-6.0.0/css/all.min.css">
+        
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/vinhlong.css">
+        <link rel="stylesheet" href="css/diemden.css">
+        <link rel="stylesheet" href="css/search.css">
+    
+        <title>Văn Thánh Miếu - Vĩnh Long</title>
+      </head>
+  <body>
+   
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <section>
+      <header class="header">
+        <div class="container d-flex justify-content-between">
+          <!-- logo -->
+          <a href="trangchu.html" style="font-size: 32px; font-weight: 550; color: #ec6408; padding: 0px;">
+            TRAVEL
+          </a>
+          <ul class="nav d-sm-none d-md-none d-lg-flex d-xl-flex">
+            <li class="nav-item align-self-center">
+              <a class=" menu nav-link text-light  align-self-center d-none d-sm-none d-md-none d-none d-lg-flex d-xl-flex" href="trangchu.html" aria-current="page">
+                TRANG CHỦ
+              </a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class=" menu nav-link text-light  align-self-center d-none d-sm-none d-md-none d-none d-lg-flex d-xl-flex" style="font-weight: 400;" href="gioithieu.html">
+                GIỚI THIỆU
+              </a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class=" menu nav-link text-light  align-self-center d-none d-sm-none d-md-none d-none d-lg-flex d-xl-flex" style="font-weight: 400;" href="diadiem.html">
+                ĐỊA ĐIỂM
+              </a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class="menu nav-link text-light  align-self-center d-none d-sm-none d-md-none d-none d-lg-flex d-xl-flex" style="font-weight: 400;" href="cactinh.html">
+                  CÁC TỈNH/THÀNH
+              </a>
+            </li>
+          </ul>
+          <!-- offcanvas menu-->
+          <div class="d-flex">
+            <div class="align-self-center me-3">
+              <nav class="navbar navbar-expand-xl navbar-expand-lg navbar-light">
+                <!-- nút menu -->
+                <button class="navbar-toggler" style="background-color: #ec6408;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- offcanvas -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header">
+                    <img src="images/logo.png" alt="" width="80px" height="80px">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <form class="d-flex mx-2">
+                    <input class="form-control search me-2 align-self-center" type="search" placeholder="Search" aria-label="Search">
+                  </form>
+                  <div class="d-flex mx-2 justify-content-end">
+                    <button type="button" class="btn p-1 m-1 align-self-center" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                      Đăng Nhập
+                    </button>
+ 
+                    <button type="button" class="btn p-1 m-1 align-self-center" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                      Đăng Ký
+                    </button>
+                  </div>
+                  <hr>
+                  <div class="offcanvas-body p-0 mx-3">
+                    <div class="dropdown mt-3">
+                      <ul class="navbar-nav">
+                        <li class="nav-item px-xl-5 px-lg-4 px-md-3 pt-3">
+                          <a href="trangchu.html">
+                            TRANG CHỦ
+                          </a>
+                        </li>
+                        <li class="nav-item px-xl-5 px-lg-4 px-md-3 pt-3">
+                          <a href="gioithieu.html">
+                            GIỚI THIỆU
+                          </a>
+                        </li>
+                        <li class="nav-item  px-xl-5 px-lg-4 px-md-3 pt-3">
+                          <a href="diadiem.html">
+                            ĐỊA ĐIỂM
+                          </a>
+                        </li>
+                        <li class="nav-item px-xl-5 px-lg-4 px-md-3 pt-3">
+                          <a href="cactinh.html">
+                            CÁC TỈNH/THÀNH
+                          </a>
+                        </li>
+                       
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+                 <!--search-->
+                 <div class="dropdown align-self-center d-sm-none d-md-none d-none d-lg-flex d-xl-flex"> 
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="dropdown-content">
+                  <a class="choose" href="vinhlong.html" style="text-decoration: none;">Vĩnh Long</a>
+                  <a class="choose" href="cantho.html" style="text-decoration: none;">Cần Thơ</a>
+                </div>
+              </div>
+            <!-- Dang nhap -->
+            <button type="button" class="btn log b align-self-center d-sm-none d-md-none d-none d-lg-flex d-xl-flex" style="color: #fff!important; width: fit-content;" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              Đăng Nhập
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title b" id="exampleModalLabel">Đăng Nhập</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="dangnhap.php" method="post" role="form">
+
+                      <div class="container">
+                        <label class="b" for="username"><b>Tên đăng nhập</b></label>
+                        <input type="text" placeholder="Nhập tên đăng nhập" name="username" required="">
+                    
+                        <label class="b" for="password"><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập mật khẩu" name="password" required="">
+                    
+                        <button type="submit" class="modal-login">Đăng nhập</button>
+                        <label>
+                          <input class="b" type="checkbox" checked="checked" name="remember"> Ghi nhớ tôi
+                        </label>
+                      </div>
+                    
+                      <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" class="cancelbtn">Thoát</button>
+                        <span class="psw b">Quên <a href="#">mật khẩu?</a></span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- Dang ký -->
+             <button type="button" class="btn b log align-self-center d-sm-none d-md-none d-none d-lg-flex d-xl-flex" style="color: #fff!important; width: fit-content;" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+             Đăng Ký
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title b" id="exampleModalLabel">Đăng Ký</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="dangky.php" method="post" role="form">
+                      <div class="container">
+                        <label class="b" for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Nhập email" name="email" required="">
+                    
+                        <label class="b" for="psw"><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập mật khẩu" name="psw" required="">
+                    
+                        <label class="b" for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat" required="">   
+                        <button type="submit" class="modal-login">Đăng ký</button>
+                        <label>
+                          <input class="b" type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Ghi nhớ tôi
+                        </label>                                                            
+                        <div class="b">Bằng cách tạo một tài khoản, bạn đồng ý với <a href="#" style="color:dodgerblue">Điều khoản &amp; Quyền riêng tư</a>.</div>
+                        <div class="clearfix">
+                          <button type="button" class="cancelbtn">Thoát</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>              
+    </header>
+  
+          <hr>
+      
+          <!-- main -->
+          <div class="container containner">
+            <main>
+                
+              <h3 class="chonoi"><a href="chuatienchau_vl.html"><i class="fa-solid fa-arrow-left"></i></a>
+                VĂN THÁNH MIẾU – DI TÍCH LỊCH SỬ VĂN HÓA KIẾN TRÚC TIÊU BIỂU CỦA VĨNH LONG
+                  <a href="chuaphuly_vl.html"><i class="fa-solid fa-arrow-right"></i></a></h3>
+              <p>Đến Vĩnh Long, thành phố bên bờ sông Cổ Chiên thơ mộng, du khách sẽ được tham quan rất nhiều di tích lịch sử, văn hóa nổi tiếng. Một trong số đó là Văn Thánh Miếu là một công trình kiến trúc tiêu biểu còn sót lại từ thời Nguyễn sau khi quân Pháp chiếm thành Vĩnh Long. Nơi đây được mệnh danh là “Quốc Tử Giám của phương Nam”, lưu giữ biết bao câu chuyện quý giá về tinh thần hiếu học của cha ông ta thời xưa.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/03/vanthanhmieuvinhlong1-768x476.jpg" alt="">
+              <p>Văn Thánh Miếu Vĩnh Long là một trong ba Văn Thánh Miếu được xây dựng đầu tiên ở Nam Bộ. Hai Văn Thánh Miếu khác nằm ở thành phố Biên Hòa, tỉnh Đồng Nai và đất Gia Định xưa. Công trình được khởi công  năm 1864 và hoàn thành năm 1866 do Đốc học Nguyễn Thông khởi xướng, thờ Khổng Tử và các học trò của Ngài. Tuy trên danh nghĩa là đề cao Nho giáo, nhưng thực chất đây là một tụ điểm hoạt động văn hóa đề cao các bậc tiền hiền và giáo dục lòng yêu nước. </p>
+              <p>Trải qua bao thời gian biến cố lịch sử, công trình đã trải qua trùng tu, tôn tạo nhiều lần nhưng vẫn giữ được nét kiến trúc nguyên bản, và đã được công nhận là di tích văn hóa cấp quốc gia năm 1991.
+
+                Cổng tam quan uy nghi hướng ra dòng sông tĩnh lặng, được xây theo lối cổ lâu có ba tầng mái, tuy đơn giản nhưng mỹ thuật, trên hai trụ có chạm đôi liễn thanh tao.
+              </p>
+              
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/03/vanthanhmieuvinhlong01-768x514.jpg alt="">
+              <p>Sau cổng là thần đạo đi thẳng vào điện Đại Thành. Hai bên là hai hàng sao cao vút có cùng niên đại với ngôi Thánh Miếu. Hai hàng cây cao thẳng tắp tạo cho khuôn viên vườn cảnh và khu di tích một bề sâu và không khí uy nghi trầm mặc lạ lùng. Trên con đường đó, giữa hoa lá đan xen, khách có thể chiêm ngưỡng ba tấm bia đá đã phôi pha với thời gian.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/03/vanthanhmieuvinhlong-1-768x519.jpg" alt="">
+              <p>Khổng Thánh Miếu trước kia đơn sơ, cột cây mái ngói trên nền đất, năm 1903 mới được thay bằng cột gỗ căm xe, lót gạch tàu, lợp ngói đại và ngói ống. Miếu thờ Đức Khổng Tử có nhiều cặp liễn đối và hoành phi mang giá trị lịch sử văn hoá và cho thấy lòng hiếu học của dân chúng Nam kỳ. 
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/03/vanthanhmieuvinhlong5-768x512.jpg" alt="">
+              <p>Chính điện làm theo kiểu trùng thềm điệp ốc. Tượng đức Khổng Tử được đặt thờ ở giữa, hai bên là bốn vị cao đồ. Ngoài ra, bàn thờ bên tả hữu còn thờ cúng 12 vị học sĩ cao đồ khác. Bên ngoài hai ngôi miếu nhỏ (Tả vu, Hữu vu) được xây dựng làm nơi tưởng nhớ đến 72 vị học trò danh tiếng của Khổng Tử.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/03/vanthanhmieuvinhlong6-768x576.jpg" alt="">
+               <p>Trong khuôn viên Văn Thánh Miếu còn có ao sen và một công trình kiến trúc nhỏ nằm bên phải lối vào là Tụy Văn Lâu (còn gọi là Văn Xương Các).</p>   
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/03/vanthanhmieuvinhlong3-768x512.jpg" alt="">    
+              <p>Văn Xương Các nằm ngay bên phải lối vào khu di tích, hai bên có hai khẩu thần công. Những khẩu súng cổ này từ năm 1921 đã được đặt tại cầu tàu (trước viện Bảo tàng Vĩnh Long hiện nay). Năm 1937 mới mang tới Văn Thánh Miếu và năm 1960 được đặt uy nghi trên bệ xây.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/03/vanthanhmieuvinhlong-2-768x576.jpg" alt="">
+              <p>Ghé thăm ngôi miếu mái ngói rêu phong cổ kính, ai cũng cảm nhận bầu không khí trầm mặc phủ kín không gian và có dịp tỏ lòng thành kính đối với các bậc tiền nhân.</p>
+            </section>
+          </main>
+        </div>
+            <!--footer-->
+            <footer class="py-5">
+              <div class="container">
+              <div class="row">
+              <div class="col">
+                  <h5>Trang</h5>
+                  <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="trangchu.html" class="nav-link p-0 ">Trang chủ</a></li>
+                  <li class="nav-item mb-2"><a href="gioithieu.html" class="nav-link p-0 ">Giới thiệu</a></li>
+                  <li class="nav-item mb-2"><a href="diadiem.html" class="nav-link p-0 ">Địa điểm</a></li>
+                  <li class="nav-item mb-2"><a href="" class="nav-link p-0 ">Các tỉnh/thành</a></li>
+                  </ul>
+              </div>
+              <div class="col">
+                  <h5 class="text4">Liên hệ chúng tôi</h5>
+                  <div class="">
+                      <p>Email: travel@gmail.com</p>
+                      <p>Số điện thoại: 090.789.6768 </p>
+                  </div>
+              </div>
+          
+                  <div class="col">
+                      <h5 class="text4">Lời nhắn</h5>
+                      <div class="">
+                          <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1">Họ và tên: </span>
+                              <input type="" class="form-control" placeholder="Nhập họ và tên" aria-label="name" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1">Email: </span>
+                              <input type="" class="form-control" placeholder="Nhập email của bạn" aria-label="email" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="input-group">
+                              <span class="input-group-text">Lời nhắn</span>
+                              <textarea class="form-control" aria-label="With textarea"></textarea>
+                          </div>
+                          <div class="button">
+                              <button type="button" class="btn btn-primary" style="margin-top: 5px;" >Gửi</button>
+                              
+                          </div>
+  
+                      </div>
+                  </div>
+              </div>
+          
+              <div class="d-flex justify-content-between py-4 my-4 border-top">
+              <p>© 2022 Company, Inc. All rights reserved.</p>
+              <div class="">
+                  <div class="col">
+                      <i class="fa-brands fa-facebook"></i>
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                  </div>
+                  <div class="col">                      </ul>
+              </div>
+            </div>
+          </footer>
+     <a href="#" class="gotop"> <i class="fa-solid fa-arrow-up"></i> </a>
+  </body>
+          
+  </html>

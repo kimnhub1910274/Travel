@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="fontawesome-free-6.0.0/css/all.min.css">
+        
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/vinhlong.css">
+        <link rel="stylesheet" href="css/diemden.css">
+        <link rel="stylesheet" href="css/search.css">
+    
+        <title>Lò gạch Mang Thít - Vĩnh Long</title>
+      </head>
+  <body>
+   
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <section>
+      <header class="header">
+        <div class="container d-flex justify-content-between">
+          <!-- logo -->
+          <a href="trangchu.html" style="font-size: 32px; font-weight: 550; color: #ec6408; padding: 0px;">
+            TRAVEL
+          </a>
+          <ul class="nav d-sm-none d-md-none d-lg-flex d-xl-flex">
+            <li class="nav-item align-self-center">
+              <a class=" menu nav-link text-light  align-self-center d-none d-sm-none d-md-none d-none d-lg-flex d-xl-flex" href="trangchu.html" aria-current="page">
+                TRANG CHỦ
+              </a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class=" menu nav-link text-light  align-self-center d-none d-sm-none d-md-none d-none d-lg-flex d-xl-flex" style="font-weight: 400;" href="gioithieu.html">
+                GIỚI THIỆU
+              </a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class=" menu nav-link text-light  align-self-center d-none d-sm-none d-md-none d-none d-lg-flex d-xl-flex" style="font-weight: 400;" href="diadiem.html">
+                ĐỊA ĐIỂM
+              </a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class="menu nav-link text-light  align-self-center d-none d-sm-none d-md-none d-none d-lg-flex d-xl-flex" style="font-weight: 400;" href="cactinh.html">
+                  CÁC TỈNH/THÀNH
+              </a>
+            </li>
+          </ul>
+          <!-- offcanvas menu-->
+          <div class="d-flex">
+            <div class="align-self-center me-3">
+              <nav class="navbar navbar-expand-xl navbar-expand-lg navbar-light">
+                <!-- nút menu -->
+                <button class="navbar-toggler" style="background-color: #ec6408;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- offcanvas -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header">
+                    <img src="images/logo.png" alt="" width="80px" height="80px">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <form class="d-flex mx-2">
+                    <input class="form-control search me-2 align-self-center" type="search" placeholder="Search" aria-label="Search">
+                  </form>
+                  <div class="d-flex mx-2 justify-content-end">
+                    <button type="button" class="btn p-1 m-1 align-self-center" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                      Đăng Nhập
+                    </button>
+ 
+                    <button type="button" class="btn p-1 m-1 align-self-center" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                      Đăng Ký
+                    </button>
+                  </div>
+                  <hr>
+                  <div class="offcanvas-body p-0 mx-3">
+                    <div class="dropdown mt-3">
+                      <ul class="navbar-nav">
+                        <li class="nav-item px-xl-5 px-lg-4 px-md-3 pt-3">
+                          <a href="trangchu.html">
+                            TRANG CHỦ
+                          </a>
+                        </li>
+                        <li class="nav-item px-xl-5 px-lg-4 px-md-3 pt-3">
+                          <a href="gioithieu.html">
+                            GIỚI THIỆU
+                          </a>
+                        </li>
+                        <li class="nav-item  px-xl-5 px-lg-4 px-md-3 pt-3">
+                          <a href="diadiem.html">
+                            ĐỊA ĐIỂM
+                          </a>
+                        </li>
+                        <li class="nav-item px-xl-5 px-lg-4 px-md-3 pt-3">
+                          <a href="cactinh.html">
+                            CÁC TỈNH/THÀNH
+                          </a>
+                        </li>
+                       
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+                 <!--search-->
+                 <div class="dropdown align-self-center d-sm-none d-md-none d-none d-lg-flex d-xl-flex"> 
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="dropdown-content">
+                  <a class="choose" href="vinhlong.html" style="text-decoration: none;">Vĩnh Long</a>
+                  <a class="choose" href="cantho.html" style="text-decoration: none;">Cần Thơ</a>
+                </div>
+              </div>
+            <!-- Dang nhap -->
+            <button type="button" class="btn log b align-self-center d-sm-none d-md-none d-none d-lg-flex d-xl-flex" style="color: #fff!important; width: fit-content;" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              Đăng Nhập
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title b" id="exampleModalLabel">Đăng Nhập</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="dangnhap.php" method="post" role="form">
+
+                      <div class="container">
+                        <label class="b" for="username"><b>Tên đăng nhập</b></label>
+                        <input type="text" placeholder="Nhập tên đăng nhập" name="username" required="">
+                    
+                        <label class="b" for="password"><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập mật khẩu" name="password" required="">
+                    
+                        <button type="submit" class="modal-login">Đăng nhập</button>
+                        <label>
+                          <input class="b" type="checkbox" checked="checked" name="remember"> Ghi nhớ tôi
+                        </label>
+                      </div>
+                    
+                      <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" class="cancelbtn">Thoát</button>
+                        <span class="psw b">Quên <a href="#">mật khẩu?</a></span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- Dang ký -->
+             <button type="button" class="btn b log align-self-center d-sm-none d-md-none d-none d-lg-flex d-xl-flex" style="color: #fff!important; width: fit-content;" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+             Đăng Ký
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title b" id="exampleModalLabel">Đăng Ký</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="dangky.php" method="post" role="form">
+                      <div class="container">
+                        <label class="b" for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Nhập email" name="email" required="">
+                    
+                        <label class="b" for="psw"><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập mật khẩu" name="psw" required="">
+                    
+                        <label class="b" for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat" required="">   
+                        <button type="submit" class="modal-login">Đăng ký</button>
+                        <label>
+                          <input class="b" type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Ghi nhớ tôi
+                        </label>                                                            
+                        <div class="b">Bằng cách tạo một tài khoản, bạn đồng ý với <a href="#" style="color:dodgerblue">Điều khoản &amp; Quyền riêng tư</a>.</div>
+                        <div class="clearfix">
+                          <button type="button" class="cancelbtn">Thoát</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>              
+    </header>
+          <!-- main -->
+          <div class="container containerr">
+            <main>             
+              <h3 class="chonoi"><a href="kdlsthoanghao_vl.html"><i class="fa-solid fa-arrow-left"></i></a>
+                  LẠC VÀO “VƯƠNG QUỐC ĐỎ” GẠCH GỐM MANG THÍT – VĨNH LONG
+                  <a href="vinhlong.html"><i class="fa-solid fa-arrow-right"></i></a>
+                </h3>
+              <p>Không chỉ có miệt vườn trái cây trĩu quả, những điểm du lịch sinh thái độc đáo, Vĩnh Long còn nổi tiếng với Vương quốc Đỏ nằm bên những dòng sông thơ
+                   mộng. Từng mái lò, từng hàng gạch, từng hình ảnh lung linh với cảnh sắc thiên nhiên sông nước đặc trưng của làng gạch gốm không thể lẫn vào đâu.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/04/logachvinhlong1.jpg" alt="">
+              <p>Ai cũng biết rằng để xây dựng nên những công trình vĩ đại không thể thiếu nền tảng là những viên gạch. Thế nhưng gạch từ đâu có, sản xuất thế nào thì
+                   không phải cũng biết rõ. Vì thế, nếu có dịp du lịch miền Tây, nhất là các tỉnh Vĩnh Long, Bến Tre,… bạn sẽ bắt gặp những làng nghề làm gạch gốm 
+                   truyền thống của người dân nằm dọc hai bên bờ sông. </p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/04/logachvinhlong-1.jpg" alt="">
+              <p>Tách ra từ nhánh chính của dòng Cửu Long, hai nhánh sông Tiền – sông Hậu chạy khắp miền Nam hàng năm mang đến cho vùng đồng bằng rộng lớn này hàng
+                   triệu mét khối phù sa màu mỡ. Khối lượng phù sa này không chỉ là nguồn dinh dưỡng cho đồng lúa hay miệt vườn bốn mùa hoa trái, mà còn hình thành 
+                   những mỏ sét nguyên sinh quý giá.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/04/logachvinhlong2.jpg" alt="">
+              <p>Mỏ sét nguyên sinh này là nguyên liệu tuyệt vời để tạo nên các sản phẩm dùng trong xây dựng, trang trí như gạch nung, đồ gốm… Những tảng đất thô sơ
+                   qua bàn tay tài hoa của người thợ trở thành những sản phẩm hữu ích cho người dân. </p>            
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/04/logachvinhlong.jpg" alt="">
+              <p>Khi nhắc đến nghề làm gạch ở miền Tây thì Vĩnh Long là tỉnh có số lượng làng nghề, số lượng hộ gia đình sản xuất gạch nhiều nhất. Làng gạch gốm trải 
+                  dài 30km thuộc thành phố Vĩnh Long, huyện Long Hồ và huyện Mang Thít. Trong đó xã Nhơn Phú và Mỹ An, huyện Mang Thít, là nơi tập trung nhiều cơ sở 
+                  sản xuất gạch hơn cả. Lò gạch, gốm Mang Thít có tuổi đời hàng trăm năm, được biết đến là nơi sản xuất gạch, gốm đỏ nổi tiếng và lớn nhất vùng Đồng 
+                  bằng sông Cửu Long, xuất khẩu sang nhiều nước trên thế giới. Dân gian thường hay gọi nơi đây là “vương quốc gạch ngói/lò gạch”.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/04/logachvinhlong1-1.jpg" alt="">
+               <p>Nếu bạn muốn đến làng gạch ở Vĩnh Long, bạn đi theo quốc lộ 53 rồi rẽ vào DT 903, chạy thẳng gặp ngã ba là đến đường DT 902 (dọc sông Cổ Chiên). Tại 
+                   đây, bạn có thể hỏi thăm người dân địa phương để được hướng dẫn tuyến đường có nhiều.</p>   
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/04/logachmangthit.jpg" alt="">    
+              <p>Từ cầu Mỹ Thuận nơi sông Tiền tách ra thành dòng Cổ Chiên đến sông Mang Thít, ven sông những lò gạch, gốm mọc lên kéo dài hàng chục km, trông xa như 
+                  
+                  những lâu đài thu nhỏ rực đỏ dưới ánh mặt trời, khiến khách ghé qua ngỡ như lạc vào thế giới cổ tích.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/04/logachmangthit1.jpg" alt="">
+              <p>Xưa kia, khi nghề làm gạch thủ công truyền thống còn thịnh vượng, mỗi nhà sở hữu vài miệng lò. Những khi vào mùa, tất cả nhất loạt nhả khói trắng ngút
+                   trời. Những lò gạch nằm san sát nhau, nhìn từ xa giống như một tiểu vương quốc bé xinh với hàng trăm tòa lâu đài nhỏ.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/04/logachvinhlong3-1.jpg" alt="">
+              <p>Một lò gạch thường cao tầm 12m. Người ta cần đến 5 ngày để tải và dỡ gạch, 15 ngày để nung và 10 ngày để xây cửa lò và chờ gạch nguội. Gạch được nung
+                   bằng trấu với quy trình kiểm tra, canh lửa rất cẩn trọng, để đảm bảo gạch ‘chín’ vừa đúng. Sau khoảng 1 tháng nung, thành phẩm thu được là khoảng 
+                   120.000 viên gạch đỏ au đúng chuẩn. Trước kia khi giao thông chưa phát triển, gạch được vận chuyển đi khắp miền Nam bằng đường sông.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/04/logachvinhlong01.jpg" alt="">
+              <p>Từng thịnh vượng là thế, nhưng bây giờ nếu bạn tới thăm vương quốc gạch đỏ ở Vĩnh Long, sẽ thấy chỉ còn số ít những lò gạch này nổi lửa. Khi hệ thống 
+                  lò hiện đại chiếm ưu thế, lò gạch truyền thống của Vĩnh Long dần dần ‘thất sủng’ và cuối cùng rơi vào dĩ vãng.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/04/logachvinhlong3.jpg" alt="">
+              <p>Từ một làng nghề truyền thống, nay các lò gạch Vĩnh Long đã trở thành một địa điểm du lịch hấp dẫn đối với du khách trong và ngoài nước. Chưa kể, ở 
+                  đây còn có khá nhiều góc chụp độc đáo mà chắc chắn bạn sẽ khó lòng bỏ qua cho xem.
+
+                  Đi dọc các con sông như Cái Chiên, Mang Thít, Cái Nhum, kênh Thầy Cai… bạn vẫn sẽ thấy hàng trăm lò gạch nằm đó. Nhưng rêu đã mọc, bụi đã bám, phủ 
+                  lên ‘thành phố gạch nung’ màu thời gian đầy cổ kính.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/04/logachvinhlong5.jpg" alt="">
+              <p>Tuy sinh sau đẻ muộn, nhưng làng gốm Vĩnh Long lại có nét độc đáo riêng, đó là dòng gốm không men. Không có màu đỏ ối của gạch, ngói, gốm Vĩnh Long có
+                   màu hồng tự nhiên, sau khi nung ửng lớp phấn trắng phơn phớt bên ngoài như sương.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/04/langgomvinhlong.jpg" alt="">
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/04/langgomvinhlong1.jpg" alt="">
+              <p>Không chỉ ấn tượng bởi màu gốm, ở Cổ Chiên, Vĩnh Long còn có công trình kiến trúc đặc sắc gần như có một không hai ở Việt Nam, đó là nhà gốm. Đến đây 
+                  bạn sẽ được chứng kiến bàn tay tài hoa và sự đầu tư công phu, tỉ mỉ của những người thợ gốm và lựa chọn cho mình những món đồ ưng ý về trang trí hoặc làm quà.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/04/langgomvinhlong2.jpg" alt="">
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/04/langgomvinhlong3.jpg">
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/04/logachvinhlong6.jpg">
+              <p>Mặc dù còn nhiều khó khăn trong việc phát triển và duy trì làng nghề nung gạch gốm đỏ Mang Thít, Vĩnh Long, nhưng những lò gạch gốm tại đây vẫn ngày 
+                  đêm đỏ lửa để tạo ra những sản phẩm đẹp, độc đáo, chất lượng. Những người thợ vẫn miệt mài với nghề tạo ra những nét văn hóa mang giá trị tâm hồn 
+                  Việt, văn hóa phương Đông, tồn tại theo năm tháng.</p>
+              <img class="img1" src="https://thamhiemmekong.com/wp-content/uploads/2020/04/langgomvinhlong5.jpg" alt="">
+              <p>Nếu có dịp du lịch Vĩnh Long, bạn đừng bỏ qua cơ hội check in ở những lò gạch gốm, mang về những bức ảnh đẹp và chất lừ cho riêng mình.</p>
+      
+            </section>
+          </main>
+        </div>
+            <!--footer-->
+            <footer class="py-5">
+              <div class="container">
+              <div class="row">
+              <div class="col">
+                  <h5>Trang</h5>
+                  <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="trangchu.html" class="nav-link p-0 ">Trang chủ</a></li>
+                  <li class="nav-item mb-2"><a href="gioithieu.html" class="nav-link p-0 ">Giới thiệu</a></li>
+                  <li class="nav-item mb-2"><a href="diadiem.html" class="nav-link p-0 ">Địa điểm</a></li>
+                  <li class="nav-item mb-2"><a href="" class="nav-link p-0 ">Các tỉnh/thành</a></li>
+                  </ul>
+              </div>
+              <div class="col">
+                  <h5 class="text4">Liên hệ chúng tôi</h5>
+                  <div class="">
+                      <p>Email: travel@gmail.com</p>
+                      <p>Số điện thoại: 090.789.6768 </p>
+                  </div>
+              </div>
+          
+                  <div class="col">
+                      <h5 class="text4">Lời nhắn</h5>
+                      <div class="">
+                          <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1">Họ và tên: </span>
+                              <input type="" class="form-control" placeholder="Nhập họ và tên" aria-label="name" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1">Email: </span>
+                              <input type="" class="form-control" placeholder="Nhập email của bạn" aria-label="email" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="input-group">
+                              <span class="input-group-text">Lời nhắn</span>
+                              <textarea class="form-control" aria-label="With textarea"></textarea>
+                          </div>
+                          <div class="button">
+                              <button type="button" class="btn btn-primary" style="margin-top: 5px;" >Gửi</button>
+                              
+                          </div>
+  
+                      </div>
+                  </div>
+              </div>
+          
+              <div class="d-flex justify-content-between py-4 my-4 border-top">
+              <p>© 2022 Company, Inc. All rights reserved.</p>
+              <div class="">
+                  <div class="col">
+                      <i class="fa-brands fa-facebook"></i>
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                  </div>
+                  <div class="col">                      </ul>
+              </div>
+            </div>
+          </footer>
+     <a href="#" class="gotop"> <i class="fa-solid fa-arrow-up"></i> </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+       var owl = $('.owl-carousel');
+        owl.owlCarousel({
+        items:4,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true
+    });
+    $('.play').on('click',function(){
+        owl.trigger('play.owl.autoplay',[1000])
+    })
+    $('.stop').on('click',function(){
+        owl.trigger('stop.owl.autoplay')
+    })
+    </script>
+
+</div>
+
+</body>
+      
+</html>

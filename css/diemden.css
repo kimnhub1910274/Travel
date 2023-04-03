@@ -1,0 +1,17 @@
+
+.img1{
+    width: 1000px;
+    height: 500px;
+    margin-bottom: 10px;
+}
+.containerr{
+    text-align: center;
+}
+p{
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: justify;
+}
+.col{
+    text-align: left;
+}
